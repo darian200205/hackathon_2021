@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jRGLQP2hF6/GU8rubYI11C+WfYSuVE32G1mH4Dn6pFvCrt7RmLHJtZlw5tGDkc3RFHcPJYDaEDeMYlFH6h5/eg==",
+  "dgSpecHash": "Tp1eGq+1egfzQCQ8SNjnjXkTrC6veo641FGeXxTJpXIkpWoBsw7W7F8B3SLwU64phr3CY8NCjxaUVglNS8uKMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,8 @@
     "C:\\Users\\daria\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\daria\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\daria\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2244\\xamarin.forms.maps.5.0.0.2244.nupkg.sha512"
   ],
   "logs": []
 }
