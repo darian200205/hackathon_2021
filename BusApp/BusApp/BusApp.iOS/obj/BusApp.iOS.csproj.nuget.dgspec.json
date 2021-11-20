@@ -38,10 +38,6 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
-            "FirebaseDatabase.net": {
-              "target": "Package",
-              "version": "[4.0.7, )"
-            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
