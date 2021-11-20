@@ -9,7 +9,10 @@
         </Frame>
         
         <maps:Map x:Name="myMap" IsShowingUser="True"/>
-        
+
+        <Button Text="Start getting location" Clicked="getUserCoordinates" />
+        <Button Text="Stop getting location" Clicked="stopGettingCoordinates" />
+
     </StackLayout>
 
 </ContentPage>

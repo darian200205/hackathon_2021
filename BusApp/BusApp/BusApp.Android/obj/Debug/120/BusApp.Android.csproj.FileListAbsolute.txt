@@ -690,3 +690,8 @@ C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\
 C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\src\mono\com\google\android\gms\tasks\OnFailureListenerImplementor.java
 C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\src\mono\com\google\android\gms\tasks\OnSuccessListenerImplementor.java
 C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\src\mono\com\google\android\gms\tasks\OnTokenCanceledListenerImplementor.java
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\assets\Firebase.dll
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\assets\LiteDB.dll
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\assets\System.Reactive.dll
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp.Android\obj\Debug\120\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
