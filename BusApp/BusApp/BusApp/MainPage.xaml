@@ -8,7 +8,7 @@
             <Label Text="These are all the available buses." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         
-        <maps:Map/>
+        <maps:Map x:Name="myMap" IsShowingUser="True"/>
         
     </StackLayout>
 
