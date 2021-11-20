@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "V4kigYelDR3Jck3jwQogILjow7D7C9S1MJ9pd4vfOomxNzrJNM53FEEPstUVros5aAPyXwIqtaBt0edyoUG21A==",
+  "dgSpecHash": "8z/j+QsrMrwFVTel0yzDNmp4sIBE+gQk65xTNppRoLgwwIYcaEGziZ7HIHJXsx4fqbhil5+RwOa3S41YeZdV3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp.Android\\BusApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\daria\\.nuget\\packages\\firebasedatabase.net\\4.0.7\\firebasedatabase.net.4.0.7.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\system.reactive\\4.0.0\\system.reactive.4.0.0.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\daria\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\daria\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",
