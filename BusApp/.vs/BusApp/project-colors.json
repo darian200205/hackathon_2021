@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dc621b8d-5a15-4f10-b607-2a7c5d7875ab": {
+      "ProjectGuid": "dc621b8d-5a15-4f10-b607-2a7c5d7875ab",
+      "DisplayName": "BusApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
