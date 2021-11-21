@@ -91,15 +91,20 @@ namespace BusApp
         private void Buses_SelectedIndexChanged(object sender, EventArgs e)
         {
             selected = Buses.Items[Buses.SelectedIndex];
-            DisplayAlert("autobuzul", Buses.Items[Buses.SelectedIndex], "hide");
+            //DisplayAlert("autobuzul", Buses.Items[Buses.SelectedIndex], "hide");
         }
 
-        private async void initializeBusLocation(String BusID, String Type, double longitude, double lat)
+        private async Task initializeBusLocation(String BusID, String Type, double longitude, double lat)
         {
-            await firebaseHelper.AddBus(BusID, Type, longitude, lat);
+            TextBox1.Text = "Sharing location...";
+            var asd = await firebaseHelper.GetBusesbyID(BusID, Type);
+            if (asd is null)
+                await firebaseHelper.AddBus(BusID, Type, longitude, lat);
+            else
+                await firebaseHelper.UpdateBus(BusID, Type, longitude, lat);
         }
 
-        private async void updateBusLocation(String BusID, String Type, double longitude, double lat)
+        private async Task updateBusLocation(String BusID, String Type, double longitude, double lat)
         {
             await firebaseHelper.UpdateBus(BusID, Type, longitude, lat);
         }
@@ -108,12 +113,14 @@ namespace BusApp
 
         public string generateID()
         {
-            return Guid.NewGuid().ToString("N");
+            //return Guid.NewGuid().ToString("N");
+            return "123e2";
         }
 
         private void stopGettingCoordinates(object sender, EventArgs e)
         {
             isOnBus = false;
+            TextBox1.Text = "You are not sharing your location";
         }
 
         async private void Button_Clicked(object sender, EventArgs e)
@@ -126,7 +133,7 @@ namespace BusApp
                 );
 
             var driverID = generateID();
-            initializeBusLocation(driverID, Type, current_location.Longitude, current_location.Latitude);
+            await initializeBusLocation(driverID, Type, current_location.Longitude, current_location.Latitude);
 
         
             while (isOnBus)
@@ -139,7 +146,7 @@ namespace BusApp
 
                //await DisplayAlert("title", "s", current_location.Longitude.ToString());
 
-               updateBusLocation(driverID, Type, current_location.Longitude, current_location.Latitude);
+                await updateBusLocation(driverID, Type, current_location.Longitude, current_location.Latitude);
        
 
                 await Task.Delay(1000);

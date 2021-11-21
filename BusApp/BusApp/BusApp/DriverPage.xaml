@@ -10,7 +10,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="1">
-                <Label Text="Track bus location" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="TextBox1" Text="Track bus location" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center"/>
             </StackLayout>
             <StackLayout Grid.Row="2">
                 <Button Text="Start track" 
