@@ -5,13 +5,26 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="These are all the available buses." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="On duty" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        
-        <maps:Map x:Name="myMap" IsShowingUser="True"/>
 
-        <Button Text="Start getting location" Clicked="getUserCoordinates" />
-        <Button Text="Stop getting location" Clicked="stopGettingCoordinates" />
+        <maps:Map x:Name="myMap" IsShowingUser="True"/>
+        <!--<maps:Map x:Name="myMap"
+                  ItemsSource="{Binding }">
+            <maps:Map.ItemTemplate>
+                <DataTemplate>
+                    <maps:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="{Binding Description}" />
+                </DataTemplate>
+            </maps:Map.ItemTemplate>
+        </maps:Map>-->
+
+        <Button Text="Start sharing your location" Clicked="getUserCoordinates" />
+        <Button Text="Stop sharing your location" Clicked="stopGettingCoordinates" />
+
+        <Button Text="start getting others location"  Clicked="startGettingOthersLocation"/>
+        <Button Text="stop getting others location" Clicked="stopGettingOthersLocation"/>
 
     </StackLayout>
 

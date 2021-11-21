@@ -33,14 +33,14 @@ namespace BusApp
 
 
 
-        //public async Task<List<Bus>> GetBusesbyType(string Type)
-        //{
-        //    var allBuses = await GetAllBuses(Type);
-        //    await firebase
-        //      .Child("Buses").Child(Type)
-        //      .OnceAsync<Bus>();
-        //    return allBuses;
-        //}
+        public async Task<Bus> GetBusesbyID(string BusID, string Type)
+        {
+            var allBuses = await GetAllBuses(Type);
+            await firebase
+              .Child("Buses").Child(Type)
+              .OnceAsync<Bus>();
+            return allBuses.Where(a => a.BusId == BusID).FirstOrDefault();
+        }
 
 
         public async Task UpdateBus(string BusId, string Type, double NewLongitude, double NewLatitude)

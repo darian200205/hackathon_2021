@@ -19,7 +19,9 @@ namespace BusApp
 
 
         bool isOnBus = false;
+        bool isGettingOthersLocation;
         //private readonly TrackCoordinates[] route1Coordinates;
+        private Pin[] arrayPins;
         // bus' coordinates array
 
         //FirebaseClient firebaseClient = new FirebaseClient("https://xamarinfirebase-2bbb3-default-rtdb.europe-west1.firebasedatabase.app/");
@@ -30,26 +32,36 @@ namespace BusApp
             Label = "Bus x" //random bus pin
         };
 
-        public MainPage()
+
+
+         public MainPage()
         {
             InitializeComponent();
 
             //route1Coordinates = getCoordinates(); // gets coordinates
-            //myMap.Pins.Add(pinRoute1);
+
+            myMap.Pins.Add(pinRoute1);
+
+
 
             //var index = 0; // coordinates index
-            //Xamarin.Forms.Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            //Xamarin.Forms.Device.StartTimer(TimeSpan.FromSeconds(1), async () =>
             //{
-            //    pinRoute1.Position = new Xamarin.Forms.Maps.Position(
-            //            route1Coordinates[index].Position.LatitudeDegrees, route1Coordinates[index].Position.LongitudeDegrees
-            //            );
-
-            //    if (index == 0)
+            //    var bus = await firebaseHelper.GetBusesbyID("1e7", "24B");
+            //    if (bus != null)
             //    {
-            //        myMap.MoveToRegion(MapSpan.FromCenterAndRadius(route1Coordinates.Position, Xamarin.Forms.Maps.Distance.FromKilometers(1)));
+            //        pinRoute1.Position = new Xamarin.Forms.Maps.Position(
+            //            bus.Lat, bus.Long
+            //            );
             //    }
 
-            //    return route1Coordinates.Length >= index;
+            //    return isOnBus;
+            //    //if (index == 0)
+            //    //{
+            //    //    myMap.MoveToRegion(MapSpan.FromCenterAndRadius(route1Coordinates.Position, Xamarin.Forms.Maps.Distance.FromKilometers(1)));
+            //    //}
+
+            //    //return route1Coordinates.Length >= index;
 
             //});
 
@@ -95,5 +107,81 @@ namespace BusApp
             isOnBus = false;
         }
 
+        async private void startGettingOthersLocation(object sender, EventArgs e)
+        {
+            isGettingOthersLocation = true;
+            String Type = "24B";
+
+        
+            while (isGettingOthersLocation)
+            {
+                List<Bus> a = await firebaseHelper.GetAllBuses(Type);
+                List<Pin> pins = new List<Pin>(1000);
+                //await DisplayAlert("title", a.ToString(), "cancel");
+               
+                for (int i = 0; i < a.Count(); i++)
+                {
+                    //await DisplayAlert("title", a[i].Lat.ToString(), "cancel");
+                    if(a[i] != null)
+                    {
+                        Pin pin = new Pin()
+                        {
+                            Label = Type
+                        };
+
+                        pin.Position = new Xamarin.Forms.Maps.Position(
+                                a[i].Lat, a[i].Long
+                        );
+
+                        myMap.Pins.Add(pin);
+
+                        //pins.Add(
+                        //        new Pin()
+                        //        {
+                        //            Label = Type
+                        //        }
+                        // );
+
+
+
+                        //pins.Last().Position = new Xamarin.Forms.Maps.Position(
+                        //    a[i].Lat, a[i].Long
+                        //);
+
+
+
+
+
+                        //pins[i].Label = Type;
+                        //await DisplayAlert("TITLE", pins[i].Label, "cancel");
+                        //pins[i].Position = new Xamarin.Forms.Maps.Position(
+                        //a[i].Lat, a[i].Long
+                        //);
+
+
+
+
+                    }
+                }
+               
+                
+                //var bus = await firebaseHelper.GetBusesbyID("1e7", "24B");
+                //if (bus != null)
+                //{
+                //    pinRoute1.Position = new Xamarin.Forms.Maps.Position(
+                //        bus.Lat+0.1, bus.Long+0.1
+                //        );
+                //}
+
+                await Task.Delay(1000);
+
+            }
+        }
+
+        private void stopGettingOthersLocation(object sender, EventArgs e)
+        {
+            isGettingOthersLocation = false;
+            myMap.Pins.Clear();
+        }
     }
 }
