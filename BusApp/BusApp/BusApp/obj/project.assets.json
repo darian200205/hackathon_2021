@@ -1384,24 +1384,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daria\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\bejan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj",
+      "projectUniqueName": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj",
       "projectName": "BusApp",
-      "projectPath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj",
-      "packagesPath": "C:\\Users\\daria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp\\obj\\",
+      "projectPath": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj",
+      "packagesPath": "C:\\Users\\bejan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\daria\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\bejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

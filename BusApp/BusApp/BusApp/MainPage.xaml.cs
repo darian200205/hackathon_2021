@@ -34,13 +34,13 @@ namespace BusApp
 
 
 
-         public MainPage()
+        public MainPage()
         {
             InitializeComponent();
 
             //route1Coordinates = getCoordinates(); // gets coordinates
 
-            myMap.Pins.Add(pinRoute1);
+            //myMap.Pins.Add(pinRoute1);
 
 
 
@@ -112,67 +112,32 @@ namespace BusApp
             isGettingOthersLocation = true;
             String Type = "24B";
 
-        
+            List<Pin> pins = new List<Pin>();
+
+            for (int i = 0; i < 100; i++)
+            {
+                Pin pin = new Pin()
+                {
+                    Label = Type
+                };
+                pins.Add(pin);
+                myMap.Pins.Add(pin);
+            }
+
             while (isGettingOthersLocation)
             {
                 List<Bus> a = await firebaseHelper.GetAllBuses(Type);
-                List<Pin> pins = new List<Pin>(1000);
-                //await DisplayAlert("title", a.ToString(), "cancel");
-               
+
                 for (int i = 0; i < a.Count(); i++)
                 {
-                    //await DisplayAlert("title", a[i].Lat.ToString(), "cancel");
                     if(a[i] != null)
                     {
-                        Pin pin = new Pin()
-                        {
-                            Label = Type
-                        };
-
-                        pin.Position = new Xamarin.Forms.Maps.Position(
+                        pins[i].Position = new Xamarin.Forms.Maps.Position(
                                 a[i].Lat, a[i].Long
                         );
-
-                        myMap.Pins.Add(pin);
-
-                        //pins.Add(
-                        //        new Pin()
-                        //        {
-                        //            Label = Type
-                        //        }
-                        // );
-
-
-
-                        //pins.Last().Position = new Xamarin.Forms.Maps.Position(
-                        //    a[i].Lat, a[i].Long
-                        //);
-
-
-
-
-
-                        //pins[i].Label = Type;
-                        //await DisplayAlert("TITLE", pins[i].Label, "cancel");
-                        //pins[i].Position = new Xamarin.Forms.Maps.Position(
-                        //a[i].Lat, a[i].Long
-                        //);
-
-
-
-
                     }
                 }
-               
-                
-                //var bus = await firebaseHelper.GetBusesbyID("1e7", "24B");
-                //if (bus != null)
-                //{
-                //    pinRoute1.Position = new Xamarin.Forms.Maps.Position(
-                //        bus.Lat+0.1, bus.Long+0.1
-                //        );
-                //}
-
+             
                 await Task.Delay(1000);
 
             }

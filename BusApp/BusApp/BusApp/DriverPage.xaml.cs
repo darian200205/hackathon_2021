@@ -14,6 +14,7 @@ namespace BusApp
     {
         bool isOnBus;
         string selected;
+
         FirebaseHelper firebaseHelper = new FirebaseHelper();
         public DriverPage()
         {
