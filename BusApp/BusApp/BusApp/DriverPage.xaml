@@ -1,0 +1,40 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusApp.DriverPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="AliceBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1">
+                <Label Text="Track bus location" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <Button Text="Start track" 
+                        Background="green" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center" 
+                        CornerRadius="15" WidthRequest="170"
+                        Clicked="Button_Clicked"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <Button Text="Stop Track" 
+                        Background="red" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center" 
+                        CornerRadius="15" 
+                        WidthRequest="170"
+                        Clicked="stopGettingCoordinates"
+                        />
+            </StackLayout>
+
+            <StackLayout Padding="10" >
+                <Picker x:Name="Buses" SelectedIndex="1" SelectedIndexChanged="Buses_SelectedIndexChanged" SelectedItem="1" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -13,3 +13,4 @@ C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\ne
 C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\BusApp.dll
 C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\ref\BusApp.dll
 C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\BusApp.pdb
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\DriverPage.xaml.g.cs

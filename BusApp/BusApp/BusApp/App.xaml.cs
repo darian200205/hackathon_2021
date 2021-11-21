@@ -10,7 +10,7 @@ namespace BusApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new DriverPage();
         }
 
         protected override void OnStart()
