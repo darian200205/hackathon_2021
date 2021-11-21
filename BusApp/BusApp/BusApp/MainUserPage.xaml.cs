@@ -17,6 +17,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
 
+
+
 namespace BusApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -24,13 +26,16 @@ namespace BusApp
     {
         bool isOnBus;
         bool isGettingOthersLocation;
-        string selected;
+        string selected = "24B";
 
 
         FirebaseHelper firebaseHelper = new FirebaseHelper();
         public MainUserPage()
         {
             InitializeComponent();
+            initializeLocation();
+
+           
             Buses.Items.Add("1");
             Buses.Items.Add("2");
             Buses.Items.Add("3");
@@ -100,6 +105,15 @@ namespace BusApp
             Buses.Items.Add("102L");
         }
 
+
+        async private void initializeLocation()
+        {
+            var current_location = await Geolocation.GetLocationAsync(
+                    new GeolocationRequest(GeolocationAccuracy.Best, TimeSpan.FromSeconds(30))
+                );
+            myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(current_location.Latitude, current_location.Longitude), Distance.FromKilometers(2)));
+        }
+
         private void Buses_SelectedIndexChanged(object sender, EventArgs e)
         {
             selected = Buses.Items[Buses.SelectedIndex];
@@ -137,6 +151,8 @@ namespace BusApp
                     new GeolocationRequest(GeolocationAccuracy.Best, TimeSpan.FromSeconds(30))
                 );
 
+            myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(current_location.Latitude, current_location.Longitude), Distance.FromMiles(1)).WithZoom(20));
+
             var driverID = generateID();
             initializeBusLocation(driverID, Type, current_location.Longitude, current_location.Latitude);
 
@@ -165,6 +181,13 @@ namespace BusApp
         {
             isGettingOthersLocation = true;
             String Type = selected;
+            button12.Text = $"Tracking: Bus {Type}";
+
+            var current_location = await Geolocation.GetLocationAsync(
+                    new GeolocationRequest(GeolocationAccuracy.Best, TimeSpan.FromSeconds(30))
+                );
+
+            //
 
             List<Bus> a = await firebaseHelper.GetAllBuses(Type);
             List<Pin> pins = new List<Pin>();
@@ -206,6 +229,7 @@ namespace BusApp
 
         private void stopGettingOthersLocation(object sender, EventArgs e)
         {
+            button12.Text = "Start track";
             isGettingOthersLocation = false;
             myMap.Pins.Clear();
         }

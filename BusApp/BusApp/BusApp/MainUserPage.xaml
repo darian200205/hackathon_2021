@@ -9,15 +9,18 @@
         <Picker x:Name="Buses" SelectedIndex="1" SelectedIndexChanged="Buses_SelectedIndexChanged" SelectedItem="1" />
 
         <maps:Map x:Name="myMap" IsShowingUser="True"/>
-     
 
-        <Button Text="Start track" 
+
+        <Button x:Name="button12"
+            Text="Start track" 
                         Background="green" 
                         HorizontalOptions="Center" 
                         VerticalOptions="Center" 
                         CornerRadius="15" WidthRequest="170"
+                        
                         Clicked="startGettingOthersLocation"/>
-        <Button Text="Stop Track" 
+        <Button 
+            Text="Stop Track" 
                         Background="red" 
                         HorizontalOptions="Center" 
                         VerticalOptions="Center" 

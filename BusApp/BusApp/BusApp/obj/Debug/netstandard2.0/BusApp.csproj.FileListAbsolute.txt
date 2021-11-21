@@ -31,3 +31,4 @@ C:\Users\bejan\source\repos\hack4am\here\hackathon_2021\BusApp\BusApp\BusApp\obj
 C:\Users\bejan\source\repos\hack4am\here\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\BusApp.pdb
 C:\Users\bejan\source\repos\hack4am\here\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\MainUserPage.xaml.g.cs
 C:\Users\bejan\source\repos\hack4am\here\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\BusApp.csproj.AssemblyReference.cache
+C:\Users\daria\Documents\GitHub\hackathon_2021\BusApp\BusApp\BusApp\obj\Debug\netstandard2.0\MainUserPage.xaml.g.cs

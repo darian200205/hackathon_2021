@@ -1665,20 +1665,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bejan\\.nuget\\packages\\": {}
+    "C:\\Users\\daria\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp.iOS\\BusApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp.iOS\\BusApp.iOS.csproj",
       "projectName": "BusApp.iOS",
-      "projectPath": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp.iOS\\BusApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\bejan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp.iOS\\BusApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\daria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\daria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1691,8 +1696,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj": {
-              "projectPath": "C:\\Users\\bejan\\source\\repos\\hack4am\\here\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj"
+            "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj": {
+              "projectPath": "C:\\Users\\daria\\Documents\\GitHub\\hackathon_2021\\BusApp\\BusApp\\BusApp\\BusApp.csproj"
             }
           }
         }
