@@ -2,7 +2,7 @@
 
 This is the repository representing the BusTracker project, UBB Hermes Hackathon, 2021:
 
-**Team LessMess**
+**Team LessMess**<br/>
 @author [Darian Serban] (https://github.com/darian200205) <br/>
 @author [Andrei Bejan] (https://github.com/beji02) <br/>
 @author [Ionut Tomutiu] (https://github.com/tontonel) <br/>
