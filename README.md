@@ -1,4 +1,11 @@
 # hackathon_2021
+
+This is the repository representing the BusTracker project, UBB Hermes Hackathon 2021:
+
+@author [Darian Serban] (https://github.com/darian200205)
+@author [Andrei Bejan] (https://github.com/beji02)
+
+
 Hackathon bus tracker app.
 To run the app, install VS along with the necessarry tools and features: Mobile developement with .NET.
 
